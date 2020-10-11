@@ -2,7 +2,7 @@
 
 
 def vailidate_user(username, minlen):
-    """Checks if the recieved username matches the required conditions."""
+    """Checks if the received username matches the required conditions."""
     if type(username) != str:
         raise TypeError("username must be a string")
     if minlen < 1:
@@ -12,7 +12,7 @@ def vailidate_user(username, minlen):
             return False
         if not username.isalnum():
             return False
-        # Usernames can't begin with a number
+        # Usernames can not begin with a number
         if username [0].isnumeric():
             return False
         return True
